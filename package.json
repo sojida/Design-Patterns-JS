@@ -1,0 +1,20 @@
+{
+  "name": "Design-Patterns-JS",
+  "version": "1.0.0",
+  "description": "Common design patterns in JavaScript",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sojida/Design-Patterns-JS.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sojida/Design-Patterns-JS/issues"
+  },
+  "homepage": "https://github.com/sojida/Design-Patterns-JS#readme"
+}
