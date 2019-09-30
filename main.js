@@ -1,5 +1,5 @@
-const Task = require('./creational/Constructor_Pattern/Task');
-const TaskService = require('./creational/Module_Pattern/TaskService')({name: 'Postgres'});
+const Task = require('./Creational_Design_Pattern/Constructor_Pattern/Task');
+const TaskService = require('./Creational_Design_Pattern/Module_Pattern/TaskService')({name: 'Postgres'});
 
 const task1 = new Task(TaskService.getData(1))
 const task2 = new Task({name: 'Learn about Git'})
