@@ -1,14 +1,15 @@
-const Task = require('./Creational_Design_Pattern/Constructor_Pattern/Task');
-const TaskService = require('./Creational_Design_Pattern/Module_Pattern/TaskService')({name: 'Postgres'});
+const Car = require('./Creational_Design_Pattern/Factory_Patterns/Car');
+const Truck = require('./Creational_Design_Pattern/Factory_Patterns/Truck');
+const Boat = require('./Creational_Design_Pattern/Factory_Patterns/Boat');
+const Person = require('./Creational_Design_Pattern/Constructor_Pattern/Person')
+const AbstractFactory = require('./Creational_Design_Pattern/Factory_Patterns/AbstractFactory')
 
-const task1 = new Task(TaskService.getData(1))
-const task2 = new Task({name: 'Learn about Git'})
-const task3 = new Task({name: 'Watch some series'})
-const task4 = new Task({name: 'Read books on functional programming'})
+const Fact = AbstractFactory()
 
-task1.doTask()
-task2.doTask()
-task3.doTask()
-task4.isComplete()
-task1.update('Learn about life')
-TaskService.postData(task4)
+Fact.registerProducts([Car, Truck])
+Fact.registerProducts([Boat])
+console.log(Fact)
+
+
+Fact.Car.drive();
+
