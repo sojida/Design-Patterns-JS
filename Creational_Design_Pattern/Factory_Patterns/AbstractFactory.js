@@ -1,18 +1,16 @@
 const AbstractFactory = function(config){
-    const products = this;
+    const products = {};
     const requirements = ['drive']
 
     const registerProducts = function(listOfProducts){
             listOfProducts.forEach(function(product){
-                console.log(product.name, '???????')
             const { valid, productName } = canBeRegistered(product)
             if (valid){
-                products[product.name] = new product()
+                products[product.name] = product
             } else{
                 console.log(`${productName} cannot be registered to the factory`)
             }
         });
-
         return AbstractFactory
 
     };
@@ -36,19 +34,26 @@ const AbstractFactory = function(config){
     const registerProduct = function(product){
         const { valid, productName } = canBeRegistered(product)
         if (valid){
-            products[product.name] = new product()
+            products[product.name] = product
         } else{
             console.log(`${productName} cannot be registered to the factory`)
         }
         
         return AbstractFactory
     }
+
+    const createProduct = function(productName, productCofig){
+        const product = products[productName]
+
+        return product ? (new product(productCofig)) : null
+    }
     
     console.log('returning object...')
     return {
         registerProduct,
         registerProducts,
+        createProduct
     };
 };
 
-module.exports = new AbstractFactory()
+module.exports = AbstractFactory()
