@@ -1,3 +1,6 @@
+[![Build Status](https://travis-ci.com/sojida/Design-Patterns-JS.svg?token=SwAzkiQLynxpQjgFsc7M&branch=master)](https://travis-ci.com/sojida/Design-Patterns-JS)
+
+
 # Design-Patterns-JS
 Common design patterns in JavaScript
 
