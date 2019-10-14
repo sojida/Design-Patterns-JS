@@ -12,7 +12,8 @@ Types of Creational Pattern
 # Structure
 - Definition
 - Main idea
-- Participants and their roles
 - When to use the pattern
-- Implementation
-- Consequences
+- Participants and their roles
+- Advantages and Disadvantages
+- UML Class and Sequence Diagrams
+- Implementations

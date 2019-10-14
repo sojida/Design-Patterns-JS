@@ -1,5 +1,8 @@
 # VehicleManufacturer
 
+## How the Builder Pattern is achieved
+...
+
 ## Participants and their roles
 ### Participants
 - Builder: JavaScript has no Abstract class implementation
@@ -21,7 +24,7 @@ Product(Vehicle)
 - The Vehicle class could include an interfaces that assist in its assembling
 
 ### UML Class Diagram
-![alt cl_diagram](./VM_CL_UML.png)
+![alt cl_diagram](./uml/VM_CL_UML.png)
 
 ### UML Sequence Diagram
-![alt sq_diagram](./VM_SQ_UML.png)
+![alt sq_diagram](./uml/VM_SQ_UML.png)

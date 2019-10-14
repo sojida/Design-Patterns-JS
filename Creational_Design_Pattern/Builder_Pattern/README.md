@@ -8,6 +8,11 @@ Builder pattern aims at simplfying the client code that creates complex objects.
 - Separate the construction of a complex object from its representation so that the same construction process can create different representations.
 - Makes the cleint refer to a common interface to create complex objects
 
+
+## When to use the Builder Pattern
+- When you want to construct complex object and you want the algorithm for constructing and assembling of the object parts to be independent
+- When you want the process for the construction complex objects to allow for differnent repesentations
+
 ## Participants and their roles
 - Builder
 - ConcreteBuilder
