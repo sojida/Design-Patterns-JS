@@ -1,4 +1,4 @@
-const AbstractFactory = function(config){
+const AbstractFactory = function(){
     const products = {};
     const requirements = ['drive']
 

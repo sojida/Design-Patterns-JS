@@ -42,5 +42,11 @@ ConcretePrototype
 ### Disadvantages
 - cloning complex objects that have circular reference might be tricky
 
+## UML Class and Sequence Diagram
+### Class Diagram
+...
+
+### Sequence Diagram
+...
 
 
