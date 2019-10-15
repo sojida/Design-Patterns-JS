@@ -1,6 +1,6 @@
-const AbstractFactory = function(){
+const AbstractFactory = function(factoryRequirements){
     const products = {};
-    const requirements = ['drive']
+    const requirements = factoryRequirements
 
     const registerProducts = function(listOfProducts){
             listOfProducts.forEach(function(product){
@@ -8,7 +8,7 @@ const AbstractFactory = function(){
             if (valid){
                 products[product.name] = product
             } else{
-                console.log(`${productName} cannot be registered to the factory`)
+                return `${productName} cannot be registered to the factory`
             }
         });
         return AbstractFactory
@@ -16,7 +16,6 @@ const AbstractFactory = function(){
     };
 
     const canBeRegistered = function(product){
-        console.log('checking registation requirements...')
         const values = {
             valid: true,
         }
@@ -31,29 +30,28 @@ const AbstractFactory = function(){
         return values;
     };
 
-    const registerProduct = function(product){
-        const { valid, productName } = canBeRegistered(product)
-        if (valid){
-            products[product.name] = product
-        } else{
-            console.log(`${productName} cannot be registered to the factory`)
-        }
+    // =============> Registers one product <===================
+    // const registerProduct = function(product){
+    //     const { valid, productName } = canBeRegistered(product)
+    //     if (valid){
+    //         products[product.name] = product
+    //     } else{
+    //         console.log(`${productName} cannot be registered to the factory`)
+    //     }
         
-        return AbstractFactory
-    }
+    //     return AbstractFactory
+    // }
 
     const createProduct = function(productName, productCofig){
         const product = products[productName]
 
         return product ? (new product(productCofig)) : null
     }
-    
-    console.log('returning object...')
+
     return {
-        registerProduct,
         registerProducts,
         createProduct
     };
 };
 
-module.exports = AbstractFactory()
+module.exports = AbstractFactory;
