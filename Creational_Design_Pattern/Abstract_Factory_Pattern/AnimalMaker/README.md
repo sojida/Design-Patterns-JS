@@ -27,7 +27,7 @@ ConcreteProduct(Lion, Tiger)
 - implements the Animal interface
 
 Client
-- implemets the inteface to wherby a object and create other objects 
+- implements the inteface wherby an object can create other objects 
 
 ## UML Class Diagram
 ![alt vehicleFactory](../umls/AM_CL_UML.png)

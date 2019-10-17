@@ -19,6 +19,7 @@ module.exports = function(config){
         console.log(`Deleteing data with id of ${id} in ${db.name}`)
     };
 
+    // Revealing module pattern
     return {
         getData,
         postData,
