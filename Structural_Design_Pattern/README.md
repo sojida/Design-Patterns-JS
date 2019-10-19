@@ -1,6 +1,6 @@
 # Structural Design Pattern
 
-This pattern is concerned with how objects are made up and the relationship between them. As classes/objects are being composed into larger structrues, this design pattern aims at keeping these structures efficient and flexible. With this pattern, we can also achieve extensibility and simplicity.
+This pattern is concerned with how objects are made up and composed. As classes/objects are being composed into larger structrues, this design pattern aims at keeping these structures efficient and flexible. This pattern aims at achieving extensibility and simplicity.
 
 Types of Structural Design Pattern
 - Adapter
@@ -13,11 +13,12 @@ Types of Structural Design Pattern
 
 ### Structure
 - Definition
-- What problem does the pattern solve
+- Main idea
 - When to use the pattern
-- Implementation
 - Participants and their roles
-- Consequences
+- Advantages and Disadvantages
+- UML Class and Sequence Diagrams
+- Implementations
 
 
 ## References
