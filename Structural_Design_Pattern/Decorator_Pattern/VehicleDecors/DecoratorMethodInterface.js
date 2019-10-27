@@ -29,5 +29,11 @@ const car = new Vehicle()
 car.decorate('colour')
 
 console.log(car.colour)
-console.log(car.updateColour('red'))
+car.updateColour('red')
 console.log(car.colour)
+car.updateColour('blue')
+console.log(car.colour)
+car.updateColour('pink')
+console.log(car.colour)
+
+console.log(car)
