@@ -6,7 +6,7 @@
 
 ## Participants and their roles
 ### Participants
-### Rolees
+### Roles
 
 ## Advantages and Disadvantages
 ### Advantages

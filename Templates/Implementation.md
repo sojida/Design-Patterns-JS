@@ -1,6 +1,6 @@
 # Implementation Title
 
-## How this implemanetation acieves the pattern
+## How this implemanetation achieves the pattern
 
 ## Participants and their Roles
 ### Participants
