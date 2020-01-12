@@ -11,23 +11,17 @@ const Receiver = function(){
 
     function deleteApartment(apartmentToDelete){
         console.log('Removing an apartment...')
-
         const newApartments = apartments.filter(function(itm){
             return itm.id !== apartmentToDelete.id
         });
 
-        apartments =  newApartments
-        return newApartments;
-    }
-
-    function getApartments(){
-        return apartments
+        apartments = newApartments
+        return apartments;
     }
 
     return {
         AddAppartment,
         deleteApartment,
-        getApartments
     }
 }
 
