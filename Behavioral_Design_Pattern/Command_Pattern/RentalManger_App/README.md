@@ -1,7 +1,9 @@
 # Rental Manager App
 
 ## How this implementation achieves the command pattern
-- request are parametizes as commands
+We have a RentalManger application but we dont want our manager to decide what commands he can give. We also want our commands to carry information about how it was executed and the state it holds. What we hope to achieve is to centralise our commands.
+
+The command pattern suggests that all commands share a similar interface ensuring that the reciever can carry out its function and deliver effectively. This pattern will allow us centrallise commands in the RentalManger allowing for execution, logging and undoing of commands.
 
 ## Participants and their roles
 ### Participants

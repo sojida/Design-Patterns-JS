@@ -1,11 +1,6 @@
 # Command Pattern
 This pattern encapsulates the calling of a method(requests) as an object, this allows for full decoupling of the execution from the implementation and less frigile implementation (i.e when changes are introduced in implementaion nothing breaks). The command pattern lets you parametize methods with different requests. This gives the pattern the ability to/functionalities of delaying or queing request execution and supporting undo operations. 
 
-Imagine we have a RentalManger application but we dont want our manager to decide what commands he can give. We also want our commands to carry information about how it was executed and the state it holds. What we hope to achieve is to centralise our commands.
-
-The command pattern suggests that all commands share a similar interface ensuring that the reciever can carry out its function and deliver effectively. This pattern will allow us centrallise commands in the RentalManger allowing for execution, logging and undoing of commands.
-
-
 ## Main idea
 The main idea behind the command pattern is that it provides you a means to separate the responsibilities of issuing commands from anything executing commands, dele-gating this responsibility to different objects instead.
 

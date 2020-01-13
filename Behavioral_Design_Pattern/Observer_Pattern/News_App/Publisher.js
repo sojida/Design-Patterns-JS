@@ -23,7 +23,6 @@ Publisher.prototype.unSubscribe = function(eventType, subscriber){
 };
 
 Publisher.prototype.notify = function(eventType, data){
-    // this
     const nameOfPublisher = this.name
     this.subscribers[eventType].forEach(function(subscriber){
         subscriber.update(nameOfPublisher, data)
