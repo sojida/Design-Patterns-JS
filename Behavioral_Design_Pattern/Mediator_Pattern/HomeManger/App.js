@@ -3,7 +3,6 @@ const Participant = require('./Participant')
 
 const HomeManger = Mediator();
 
-
 // Homes
 const homeOne = new Participant('Home', 'Home One', HomeManger);
 const homeTwo = new Participant('Home', 'Home Two', HomeManger);
@@ -28,8 +27,12 @@ HomeManger.register(
     ]
 )
 
-// Requests
-homeOne.send('I need some one to cut my flowers', 'Gardners');
-homeOne.send('I need some one to clean my home', 'Home Cleaners');
-homeTwo.send('I need a bay sitter', 'Baby Sitters');
-homeTwo.send('I need some one');
+module.exports =  { 
+    homeOne, 
+    homeTwo, 
+    ray_house_cleaning, 
+    sam_house_cleaning, 
+    bisi_baby_sitter, 
+    james_gardner, 
+    paul_car_washer 
+}

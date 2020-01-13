@@ -28,7 +28,6 @@ const Mediator = function(){
         // if the message is directed to service
         if (to && participants[to]){
            notifyAll(participants[to], message, from) 
-           console.log(`Message sent to all in ${to}`)
         }
 
         // if the message is no directed to any one then send to all
@@ -36,7 +35,6 @@ const Mediator = function(){
             for(service in participants){
                 notifyAll(participants[service], message, from)
             }
-            console.log('Message sent to all services')
         }
     }
 

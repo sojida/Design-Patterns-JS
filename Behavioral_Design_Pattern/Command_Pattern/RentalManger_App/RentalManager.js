@@ -15,7 +15,6 @@ RentalManager.prototype.execute = function(command){
 
 RentalManager.prototype.undo = function(){
     if (this.commands.length){
-        console.log(this.commands)
         this.commands.pop();
         const lastCommand = this.commands[this.commands.length - 1]
         this.apartments = lastCommand.currentState;
