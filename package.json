@@ -1,5 +1,5 @@
 {
-  "name": "Design-Patterns-JS",
+  "name": "design_patterns_js",
   "version": "1.0.0",
   "description": "Common design patterns in JavaScript",
   "main": "main.js",
@@ -19,6 +19,11 @@
   "homepage": "https://github.com/sojida/Design-Patterns-JS#readme",
   "dependencies": {},
   "devDependencies": {
-    "jest": "^24.9.0"
+    "codecov": "^3.6.1",
+    "jest": "^24.9.0",
+    "nyc": "^14.1.1"
+  },
+  "jest": {
+    "collectCoverage": true
   }
 }

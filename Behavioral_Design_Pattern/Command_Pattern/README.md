@@ -1,18 +1,8 @@
 # Command Pattern
-
-This pattern encapsulates the calling of a method(requests) as an object, this allows for full decoupling of the execution from the implementation and less frigile implementation (i.e when changes are introduced in implementaion nothing breaks). The command pattern lets you parametize methods with different requests. This gives the pattern the ability to/functinalities of delaying or queing request execution and supporting undo operations. 
-
+This pattern encapsulates the calling of a method(requests) as an object, this allows for full decoupling of the execution from the implementation and less frigile implementation (i.e when changes are introduced in implementaion nothing breaks). The command pattern lets you parametize methods with different requests. This gives the pattern the ability to/functionalities of delaying or queing request execution and supporting undo operations. 
 
 ## Main idea
 The main idea behind the command pattern is that it provides you a means to separate the responsibilities of issuing commands from anything executing commands, dele-gating this responsibility to different objects instead.
-
-## What type of relationship pattern does this exhibit
-- This is a many-to-many relationship
-
-## What problem does this pattern solve
-Imagine we have a RentalManger application but we dont want our manager to decide what commands he can give. We also want our commands to carry information about how it was executed and the state it holds. What we hope to achieve is to centralise our commands.
-
-The command pattern suggests that all commands share a similar interface ensuring that the reciever can carry out its function and deliver effectively. This pattern will allow us centrallise commands in the RentalManger allowing for execution, logging and undoing of commands.
 
 ## When to use this pattern
 - When you want your parametize objects with operations.
@@ -28,28 +18,45 @@ The command pattern suggests that all commands share a similar interface ensurin
 - [App](./App.js)
 
 ## Participants and their roles
-- Client(App.js)
+### Participants
+- Client
 - Invoker(HomeManger)
 - Reciever(Reciever.js)
 - Command(Command.js)
 - ConcreteCommand(ConcreteCommands.js)
 
-### Client
-The client creates the ConcreteCommand(AddApartmentCommand) and sets it receiver
 
-### Invoker
-Homemanager is the invoker. This ask the command to carry out the request.
+### Roles
+Client
+- the client creates the ConcreteCommand  and sets it receiver
 
-### Receiver
-Defines the actions that will be carried out. The receiver does the actual work. Any class/object can serve as a receiver provided it has some operations.
+Invoker
+- asks the command to carry out the request.
 
-### Command
-Defines the interface to execute requests
+Receiver
+- defines the actions that will be carried out. The receiver does the actual work. Any class/object can serve as a receiver provided it has some operations.
 
-### ConcreteCommand
-This is where the receiver and the action binds. Execution operations are perform with this object
+Command
+- defines the interface to execute requests/operations
 
+ConcreteCommand
+- this is where the receiver and the action binds.
+- implements Execute by invoking the corresponding operations on the Receiver
 
-## Consequences
+## Advantages and Disadvantages
+### Advantages
+- Single Responsibility Principle is maintained
+- Open/Closed Principle
+- redo/undo can be implemented
+- simple commands can be assembled into one complex one
+- commands can be deferred
+
+### Disadvantages
 - It increase the number of classes and objects
 - Increased comlexity
+
+## UML Class and Sequence Diagrams
+![alt command](./umls/CMD_CL_UML.png)
+
+## Implementations
+- [Rental Manger App](./RentalManger_App/README.md)

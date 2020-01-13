@@ -1,4 +1,5 @@
 [![Build Status](https://travis-ci.com/sojida/Design-Patterns-JS.svg?token=SwAzkiQLynxpQjgFsc7M&branch=master)](https://travis-ci.com/sojida/Design-Patterns-JS)
+[![codecov](https://codecov.io/gh/sojida/Design-Patterns-JS/branch/master/graph/badge.svg?token=8YGKPuduSU)](https://codecov.io/gh/sojida/Design-Patterns-JS)
 
 
 # Design-Patterns-JS
